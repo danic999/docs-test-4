@@ -1,0 +1,417 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ 
+ /* You can override the default Infima variables here. */
+ .hero{
+   padding-top: 80px;
+   padding-bottom: 60px ;
+   background-color: transparent;
+ }
+ .navbar__items--right{
+   gap: 24px;
+ }
+ .footer{
+   background-color: #142641;
+   color: #D7E5EE;
+   padding: 80px 0px;
+   
+ }
+ .footer a{
+   color: white;
+ }
+
+ h3{
+  font-weight: 500;
+ }
+ /**
+ * This is a variable font
+ * You can controll variable axes as shown below:
+ * font-variation-settings: 'wght' 900.0;
+ *
+ * available axes:
+ 
+ * 'wght' (range from 300.0 to 900.0)
+ 
+ */
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
+        url('/fonts/Satoshi-Variable.woff') format('woff'),
+        url('/fonts/Satoshi-Variable.ttf') format('truetype');
+        font-weight: 300 900;
+        font-display: swap;
+        font-style: normal;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-VariableItalic.woff') format('woff'),
+        url('/fonts/Satoshi-VariableItalic.ttf') format('truetype');
+        font-weight: 300 900;
+        font-display: swap;
+        font-style: italic;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-Light.woff2') format('woff2'),
+        url('/fonts/Satoshi-Light.woff') format('woff'),
+        url('/fonts/Satoshi-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-display: swap;
+        font-style: normal;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-LightItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-LightItalic.woff') format('woff'),
+        url('/fonts/Satoshi-LightItalic.ttf') format('truetype');
+        font-weight: 300;
+        font-display: swap;
+        font-style: italic;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+        url('/fonts/Satoshi-Regular.woff') format('woff'),
+        url('/fonts/Satoshi-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-display: swap;
+        font-style: normal;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-Italic.woff2') format('woff2'),
+        url('/fonts/Satoshi-Italic.woff') format('woff'),
+        url('/fonts/Satoshi-Italic.ttf') format('truetype');
+        font-weight: 400;
+        font-display: swap;
+        font-style: italic;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-Medium.woff2') format('woff2'),
+        url('/fonts/Satoshi-Medium.woff') format('woff'),
+        url('/fonts/Satoshi-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-display: swap;
+        font-style: normal;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-MediumItalic.woff') format('woff'),
+        url('/fonts/Satoshi-MediumItalic.ttf') format('truetype');
+        font-weight: 500;
+        font-display: swap;
+        font-style: italic;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-Bold.woff2') format('woff2'),
+        url('/fonts/Satoshi-Bold.woff') format('woff'),
+        url('/fonts/Satoshi-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-display: swap;
+        font-style: normal;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-BoldItalic.woff') format('woff'),
+        url('/fonts/Satoshi-BoldItalic.ttf') format('truetype');
+        font-weight: 700;
+        font-display: swap;
+        font-style: italic;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-Black.woff2') format('woff2'),
+        url('/fonts/Satoshi-Black.woff') format('woff'),
+        url('/fonts/Satoshi-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-display: swap;
+        font-style: normal;
+ }
+ 
+ 
+ @font-face {
+   font-family: 'Satoshi';
+   src: url('/fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+        url('/fonts/Satoshi-BlackItalic.woff') format('woff'),
+        url('/fonts/Satoshi-BlackItalic.ttf') format('truetype');
+        font-weight: 900;
+        font-display: swap;
+        font-style: italic;
+ }
+ 
+ :root {
+   --ifm-h1-font-size:48px;
+   --ifm-h2-font-size:30px;
+   --ifm-h3-font-size:24px;
+
+   --ifm-color-primary:#0062F2;;
+   --ifm-color-primary-dark: #111827;
+   --ifm-color-primary-darker: #2F4361;
+   --ifm-color-primary-darkest: #142641;
+   --ifm-color-primary-light: #C6DDFF;
+   --ifm-color-primary-lighter: #E7F0FF;
+   --ifm-menu-color:#142641;
+   --ifm-color-primary-lightest: #E7F0FF;
+   --ifm-table-stripe-background: transparent;
+   --ifm-code-font-size: 95%;
+   --ifm-leading:12px;
+   --ifm-spacing-vertical:12px;
+   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+   
+ }
+ 
+ /* For readability concerns, you should choose a lighter palette in dark mode. */
+ [data-theme='dark'] {
+   --ifm-color-primary: #0062F2;
+   --ifm-color-primary-dark: #C6DDFF;
+   --ifm-color-primary-darker: #E7F0FF;
+   --ifm-color-primary-darkest: #1a8870;
+   --ifm-color-primary-light: #29d5b0;
+   --ifm-color-primary-lighter: #32d8b4;
+   --ifm-color-primary-lightest: #4fddbf;
+   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+   --ifm-table-stripe-background: transparent !important;
+
+
+ }
+ 
+ body {
+   font-family: 'Satoshi', sans-serif;
+ }
+ 
+ .navbar__items--right{
+   gap: 24px;
+ }
+ .footer{
+   background-color: #142641;
+   color: #D7E5EE;
+   padding: 80px 0px;
+   
+ }
+ .footer a{
+   color: white;
+ }
+ .footer__col{
+  min-width: 240px;
+ }
+ .menu__list-item{
+  font-weight: 400;
+ }
+ /* Table stylization    */
+ table{
+   border: none;
+   border-collapse: collapse;
+   
+ }
+ table td, table th, table tr {
+   border: none;
+   padding: 12px;
+   text-align: left;
+   text-decoration: none;
+ }
+ table td{
+   @apply text-base text-dark-blue-2 dark:text-[#C6DDFF];
+ }
+ /* Colors on code      */
+ /* Colors for keywords */
+ .token.keyword,
+ .token.selector,
+ .token.important,
+ .token.atrule {
+   color: #0062F2 !important; 
+ }
+ 
+ /* Colors for strings */
+ .token.string,
+ .token.attr-value {
+   color: #0062F2 !important;
+ }
+ 
+ /* Color for comments */
+ .token.comment,
+ .token.block-comment,
+ .token.prolog,
+ .token.doctype,
+ .token.cdata {
+   color: #0062F2;
+ }
+ 
+ /* COlor for numbers */
+ .token.number {
+   color: #0062F2; 
+ }
+ 
+ /* Color for function */
+ .token.function,
+ .token.class-name {
+   color: #0062F2; 
+ }
+ 
+ /* Variable Colors */
+ .token.variable {
+   color: #0062F2 !important; 
+ }
+ 
+ /* Color for operators and delimiters*/
+ .token.operator,
+ .token.punctuation {
+   color: #0062F2 !important; 
+ }
+
+  /* Delete of Docsearch shortcuts placeholder*/
+
+ .DocSearch-Button-Keys{
+  display: none !important;
+ }
+
+   /* Adding github icon in header*/
+  .header-github-link:hover {
+    opacity: 0.6;
+  }
+  
+  .header-github-link:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+      no-repeat;
+  }
+  
+  html[data-theme='dark'] .header-github-link:before {
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+      no-repeat;
+  }
+
+  /* free trial button */
+
+  .free-trial-link{
+    background-color: #0062F2;
+    border-radius: 30px;
+    color: white;
+    order: 4 !important;
+    width: fit-content;
+    font-weight: bold;
+
+  }
+
+  .free-trial-link:hover{
+    background-color: #0062F2;
+    border-radius: 30px;
+    color: white;
+  }
+  .free-trial-link svg{
+    display: none;
+  }
+
+  .navbar__items--right{
+    display: flex;
+    flex-flow: row;
+  }
+  .navbar__logo{
+    margin-right: 20px;
+  }
+  .pageHeader{
+    @apply w-full pb-[17px] pt-[60px]
+  }
+  .blueBtn{
+    @apply bg-cobalt-25 py-[6px] px-[12px] rounded-full border-none text-sm font-medium text-royal-blue font-display
+  }
+  .spacer{
+    @apply w-full h-[1px] bg-gray absolute top-[180px] max-w-[1216px]; 
+  }
+
+
+  .dropdown {
+    font-weight: normal;
+    top: 0.5px;
+}
+
+.dropdown .navbar__link::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 24px;
+    background-image: '../../static/img/arrow.svg';
+    background-size: contain;
+    --ifm-global-shadow-md: white !important;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    box-shadow: none !important;
+    margin-left: 8px;
+    top: 13px !important;
+    opacity: 0;
+    border: none !important;
+    transition: all 0.3s ease-in-out;
+    margin: 0px;
+}
+
+.dropdown:hover .navbar__link,
+.dropdown:active .navbar__link,
+.navbar__item a:hover {
+    font-weight: bold;
+    color: #0062F2;
+}
+
+.dropdown:hover .navbar__link::after,
+.dropdown:active .navbar__link::after,
+.navbar__item a:hover .navbar__link::after {
+    width: 24px;
+    border: none !important;
+    opacity: 1;
+    color: #0062F2;
+}
+
+
+.navbar__link--active, .navbar__link:hover {
+  font-weight: bold;
+  transition: all 300ms ease-in-out;
+}
+
+
+.release-notes p{
+  @apply text-xs text-dark-blue !mt-[40px] not-italic
+  
+}
+.release-notes em{
+  @apply not-italic
+
+}
+
+.release-notes h2, h3 {
+  @apply mt-0
+  
+}

@@ -1,0 +1,8 @@
+{
+    "name": "docs-monorepo",
+    "private": true,
+    "workspaces": [
+      "main", 
+      "blinkid"
+    ]
+  }
